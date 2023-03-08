@@ -24,7 +24,7 @@ function Home() {
         ))}
       </div>
       <div className='col-span-2 px-5 md:px-10 pt-5'>
-        <h3 className=' md:w-1/2 uppercase text-primary text-lg bold border-b border-b-primary mb-2 md:mb-4'>
+        <h3 className=' md:w-100 uppercase text-primary text-lg bold border-b border-b-primary mb-2 md:mb-4'>
           Game News
         </h3>
         <div className='block md:grid md:grid-cols-2 md:gap-8'>
