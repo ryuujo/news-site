@@ -16,7 +16,7 @@ function Navbar() {
             <Clock />
             <div className='inline-flex mt-4 space-x-7'>
               {sosmed.map((s) => (
-                <Link key={s.name} to={s.link}>
+                <Link key={s.name} to={s.link} target='_blank' rel="noopener noreferrer">
                   {s.render}
                 </Link>
               ))}
