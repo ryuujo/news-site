@@ -14,7 +14,7 @@ function Navbar() {
       <header className="hidden md:block">
         <div className="navbar bg-base-100 pt-12 px-4 lg:px-20 pb-5">
           <div className="navbar-start block">
-            <Clock/>
+            <Clock />
             <div className="inline-flex mt-4 space-x-7">
               {sosmed.map((s) => (
                 <Link key={s.name} to={s.link}>
