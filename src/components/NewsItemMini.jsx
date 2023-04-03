@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function NewsItemMini(props) {
-  const { image, title, description } = props;
+  const { image, title, description, id } = props;
   return (
-    <Link to='/news/#'>
+    <Link to={`/news/${id}`}>
       <div className='flex gap-4 mb-4'>
         <div>
           <img src={image} alt={title} className='w-20 md:w-52' />

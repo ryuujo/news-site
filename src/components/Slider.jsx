@@ -14,7 +14,8 @@ import feature from '../assets/img/feature-static1.jpg';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
-function Slider() {
+function Slider(props) {
+  // const { news } = props;
   return (
     <>
       <Swiper

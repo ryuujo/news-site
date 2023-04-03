@@ -1,7 +1,11 @@
+// import { Link } from 'react-router-dom';
+
 import Slider from '../components/Slider';
 import NewsItemMini from '../components/NewsItemMini';
 
 import image from '../assets/img/pop_right1.jpg';
+import big from '../assets/img/feature-static2.jpg';
+import BigSizeNews from '../components/BigSizeNews';
 
 function Home() {
   return (
@@ -28,7 +32,7 @@ function Home() {
           Game News
         </h3>
         <div className='block md:grid md:grid-cols-2 md:gap-8'>
-          <div>Big size news</div>
+          <BigSizeNews image={big} title='Big Size News' id={69} />
           <div>
             {[...Array(3)].map((d, i) => (
               <NewsItemMini
@@ -36,6 +40,7 @@ function Home() {
                 title={`Judul ${i + 1}`}
                 description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
           quibusdam eaque ipsam amet ipsa.'
+                id={i + 1}
                 key={i}
               />
             ))}
